@@ -1,17 +1,25 @@
 import React from "react";
+
 import QueryInput from "./QueryInput";
-import QueryHistory from "./QueryHistory";
+
 import ResultsDisplay from "./ResultsDisplay";
+import Sidebar from "./sidebar";
+
+
 
 const Dashboard = () => {
   return (
-    <div className="p-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg">
-      <h1 className="text-2xl font-bold mb-4 text-center">Data Query Dashboard</h1>
-      <QueryInput />
-      <QueryHistory />
-      <ResultsDisplay />
+    <div className="flex h-screen">
+      <Sidebar />
+      <div className="flex-1 p-6 bg-gray-100">
+        <h1 className="text-2xl font-bold mb-4">Data Query Dashboard</h1>
+        <QueryInput />
+        <ResultsDisplay />
+      </div>
     </div>
   );
 };
+
+
 
 export default Dashboard;
