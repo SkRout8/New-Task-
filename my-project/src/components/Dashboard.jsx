@@ -3,7 +3,8 @@ import React from "react";
 import QueryInput from "./QueryInput";
 
 import ResultsDisplay from "./ResultsDisplay";
-import Sidebar from "./sidebar";
+import Sidebar from "./Sidebar";
+
 
 
 
